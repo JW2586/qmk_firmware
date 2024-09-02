@@ -1,4 +1,4 @@
-/* Copyright 2023  Jawick
+/* Copyright 2022  CyanDuck
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -15,3 +15,22 @@
 */
 
 #pragma once
+
+// 3 displays:
+#define ST7789_NUM_DEVICES 1
+
+/* SPI settings. */
+#define SPI_DRIVER SPID0
+#define SPI_SCK_PIN GP18
+#define SPI_MOSI_PIN GP19
+// We don't actually use MISO, so set it to a pin we don't use.
+// Otherwise it likely get's tripped up as we use GP16 for D/C
+#define SPI_MISO_PIN GP25
+
+#define DISPLAY_CS_PIN GP17
+#define DISPLAY_RST_PIN GP24
+#define DISPLAY_DC_PIN GP23
+#define DISPLAY_BL_PIN GP22
+
+#define BACKLIGHT_PIN GP22
+#define BACKLIGHT_ON_STATE 1

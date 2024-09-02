@@ -1,17 +1,17 @@
-# Shoveler
+# Waterfowl
 
-The Shoveler is a planck compatible PCB that replaces the two innermost columns with a modular segment.
+The Waterfowl is a 36-key split keyboard inspired by the Kyria and Arch-36.
 
-* Keyboard Maintainer: [Jawick](https://github.com/JW2586)
-* Hardware Supported: RP2040
+* Keyboard Maintainer: [CyanDuck](https://github.com/JW2586)
+* Hardware Supported: Pro Micro 5V/16MHz and compatible.
 
 Make example for this keyboard (after setting up your build environment):
 
-    make shoveler:default
+    make waterfowl:default
 
 Example of flashing this keyboard:
 
-    make shoveler:default:flash
+    make waterfowl:default:flash
 
 Enter the bootloader by:
 - Press the key mapped to reset (bottom left key in FUNC layer/layer 3)
